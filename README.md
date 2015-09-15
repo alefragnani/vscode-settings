@@ -7,7 +7,7 @@ _I'm keeping it here because I want to have it synced between different machines
 ## Preferences / User Settings
 
 * Encoding
-* Word Wrapping
+* Word Wrap
 * Files Exclude
   - Pascal
   - Java
