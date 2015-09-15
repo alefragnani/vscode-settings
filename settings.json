@@ -1,12 +1,22 @@
 // Place your settings in this file to overwrite the default settings
 {
-		// The default character set encoding to use when reading and writing files.
-	"files.encoding": "windows1252",
+		// Controls the font size.
+	"editor.fontFamily": "Source Code Pro",
+	"editor.fontSize": 12,
 	"editor.wrappingColumn": 100,
-
+	
+	"files.encoding": "windows1252",
+	
 	"files.exclude": {
-		// Object Pascal
-		"**/*.dcu": {"when": "$(basename).pas"},
+		"**/.git": true,
+		"**/.DS_Store": true,
+		// pascal
+		"**/*.ico": true,
+		"**/*.{res,RES}": true,
+		"**/*.rc": true,
+		"**/*.bak?": true,
+		"**/*.dcu": true,
+		"**/*.rsb": true,
 		"**/*.dfm": {"when": "$(basename).pas"},
 		"**/*.~dfm": {"when": "$(basename).pas"},
 		"**/*.ddp": {"when": "$(basename).pas"},
@@ -14,8 +24,14 @@
 		"**/*.~pas": {"when": "$(basename).pas"},
 		"**/*.exe": {"when": "$(basename).dpr"},
 		"**/*.used": {"when": "$(basename).dpr"},
-		"**/*.{res,RES}": true,
-		"**/*.ico": true
+		// Delphi XE
+		"__history/**": true,
+		"**/*.local": true,
+		
+		// finalbuilder
+		"**/*.fbl7": true,
+		"**/*.fbpInf": true
+
 	},
 
 	"search.excludeFolders": [

@@ -13,4 +13,60 @@
 		"description": "Log output to console"
 	}
 */
+
+
+	"Task Compile Delphi 5 DCC32": {
+		"prefix": "taskCompileDelphi5_DCC32",
+		"body": [
+		
+			"\"version\": \"0.1.0\",",
+			"",
+			"\"windows\": {",
+			"	\"command\": \"dcc32.exe\"",
+			" },",
+			"\"isShellCommand\": true,",
+			"\"showOutput\": \"always\",",
+			"\"args\": [\"$1\"],",
+			"\"problemMatcher\": {",
+			"	\"owner\": \"external\",",
+			"	\"pattern\": {",
+			"		\"regexp\": \"^(.+?)\\\\\\\\\\\\\\\\([\\\\\\\\w]+\\\\\\\\.pas)\\\\\\\\((\\\\\\\\d+)\\\\\\\\)\\\\\\\\s(Fatal|Error|Warning|Hint):(.*)\",",
+			"		\"file\": 2,",
+			"		\"line\": 3,",
+			"		\"message\": 5",
+			"	}",
+			"}"        
+			// \"console.log('$1');\",
+			// \"$2\""
+		],
+		"description": "Create a Task to Compile a Delphi 5 Project with dcc32"
+	},
+	
+
+	"Task Compile Delphi XE DCC32": {
+		"prefix": "taskCompileDelphiXE_DCC32",
+		"body": [
+		
+			"\"version\": \"0.1.0\",",
+			"\"windows\": {",
+			"	\"command\": \"C:\\\\\\\\Program Files (x86)\\\\\\\\Embarcadero\\\\\\\\RAD Studio\\\\\\\\10.0\\\\\\\\bin\\\\\\\\dcc32.exe\"",
+			" },",
+			"\"isShellCommand\": true,",
+			"\"showOutput\": \"always\",",
+			"\"args\": [\"$1\"],",
+			"\"problemMatcher\": {",
+			"	\"owner\": \"external\",",
+			"	\"pattern\": {",
+			"		\"regexp\": \"^([\\\\\\\\w]+\\\\\\\\.pas)\\\\\\\\((\\\\\\\\d+)\\\\\\\\)\\\\\\\\s(Fatal|Error|Warning|Hint):(.*)\",",
+			"		\"file\": 1,",
+			"		\"line\": 2,",
+			"		\"message\": 4",
+			"	}",
+			"}"        
+			// \"console.log('$1');\",
+			// \"$2\""
+		],
+		"description": "Create a Task to Compile a Delphi XE Project with dcc32"
+	}
+	
 }
