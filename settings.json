@@ -1,0 +1,27 @@
+// Place your settings in this file to overwrite the default settings
+{
+		// The default character set encoding to use when reading and writing files.
+	"files.encoding": "windows1252",
+	"editor.wrappingColumn": 100,
+
+	"files.exclude": {
+		// Object Pascal
+		"**/*.dcu": {"when": "$(basename).pas"},
+		"**/*.dfm": {"when": "$(basename).pas"},
+		"**/*.~dfm": {"when": "$(basename).pas"},
+		"**/*.ddp": {"when": "$(basename).pas"},
+		"**/*.~ddp": {"when": "$(basename).pas"},
+		"**/*.~pas": {"when": "$(basename).pas"},
+		"**/*.exe": {"when": "$(basename).dpr"},
+		"**/*.used": {"when": "$(basename).dpr"},
+		"**/*.{res,RES}": true,
+		"**/*.ico": true
+	},
+
+	"search.excludeFolders": [
+		".git",
+		"node_modules",
+		"bower_components",
+		"__history"
+	]
+}
