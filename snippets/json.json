@@ -67,6 +67,20 @@
 			// \"$2\""
 		],
 		"description": "Create a Task to Compile a Delphi XE Project with dcc32"
+	},
+	
+	"Snippet": {
+	"prefix": "snippet",
+	"body": [
+		"\"${1:description}\": {",
+		"\"prefix\": \"${2:prefix}\",",
+		"\"body\": [",
+		"  \"${3:body}\"",
+		"],",
+		"\"description\": \"${1:description}\"",
+		"},"
+	],
+	"description": "Snippet"
 	}
 	
 }
