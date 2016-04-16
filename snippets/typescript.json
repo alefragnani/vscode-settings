@@ -1,0 +1,57 @@
+{
+    /*
+	 // Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+    "if undefined": {
+        "prefix": "ifund",
+        "body": [
+            "if (typeof $1 == 'undefined') {",
+            "		return;",
+            "}"
+        ]
+    },
+    "register command": {
+        "prefix": "regComm",
+        "body": [
+            "vscode.commands.registerCommand('${1:commandName}', () => {",
+            "	$2",
+            "});"
+        ]
+    },
+    "register command formatter": {
+        "prefix": "regFormatter",
+        "body": [
+            "context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider('${1:languageName}', {",
+            "    provideDocumentFormattingEdits: (document, options) => {",
+            "        return ${2:languageFormatterFile}.${3:languageFormatterClass}.format(document, undefined, options)",
+            "    }",
+            "}));",
+            "",
+            "context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider('${1:languageName}', {",
+            "    provideDocumentRangeFormattingEdits: (document, options) => {",
+            "        return ${2:languageFormatterFile}.${3:languageFormatterClass}.format(document, undefined, options)",
+            "    }",
+            "}));"
+        ]
+    },
+    "Promisses": {
+        "prefix": "retnewpromisse",
+        "body": [
+            "return new Promise((resolve, reject) => {",
+            "    $1",
+            "});"
+        ],
+        "description": "Promisses"
+    }
+}

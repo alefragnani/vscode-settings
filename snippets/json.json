@@ -81,6 +81,13 @@
 		"},"
 	],
 	"description": "Snippet"
-	}
-	
+	},
+    
+    "license": {
+    "prefix": "lic",
+    "body": [
+      "\"license\": \"SEE LICENSE IN LICENSE.md\","
+    ],
+    "description": "license"
+    }	
 }

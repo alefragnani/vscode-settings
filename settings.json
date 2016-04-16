@@ -2,7 +2,7 @@
 {
 		// Controls the font size.
 	"editor.fontFamily": "Source Code Pro",
-	"editor.fontSize": 12,
+	"editor.fontSize": 14,
 	"editor.wrappingColumn": 100,
 	
 	"files.encoding": "windows1252",
@@ -39,5 +39,34 @@
 		"node_modules",
 		"bower_components",
 		"__history"
-	]
+	],
+    
+    "codegnuglobal.encoding": "ISO-8859-1",
+
+	
+	"projectManager.sortList": "Name",
+    "projectManager.codePath": "C:\\Program Files\\Microsoft VS Code\\Bin\\Code.cmd",
+    "projectManager.openInNewWindow": false,
+    	
+	"tagged.tagString": "# #day/#month/#year - #enteredText",
+	
+	"bookmarks.saveBookmarksBetweenSessions": true,
+    "bookmarks.navigateThroughAllFiles": true,
+    "bookmarks.useStickyBookmarks": true,
+	
+    "numberedBookmarks.saveBookmarksBetweenSessions": true,
+    
+    "gitProjectManager.baseProjectsFolders": [
+        "C:\\Users\\Alessandro\\Documents\\GitHub-Testing"
+    ],
+    
+    //"pascal.format.indent": 3,
+    "pascal.formatter.engine": "jcf",
+    "pascal.formatter.enginePath": "C:\\Delphi\\JediCodeFormat\\bin\\jcf.exe",
+    "pascal.formatter.engineParameters": "C:\\Delphi\\JediCodeFormat\\bin\\JCFSettings.cfg"
+    // "pascal.formatter.engine": "ptop",
+    // "pascal.formatter.enginePath": "C:\\FPC\\2.6.4\\bin\\i386-win32\\ptop.exe",
+    // "pascal.formatter.engineParameters": ""
+    //"pascal.formatter.engineParameters": "C:\\FPC\\2.6.4\\bin\\i386-win32\\ptop.cfg"
+    
 }
