@@ -1,5 +1,5 @@
 {
-/*
+	/*
 	 // Place your snippets for Markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
 	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
@@ -13,25 +13,58 @@
 		"description": "Log output to console"
 	}
 */
+	"Changelog New Version": {
+		"prefix": "clv",
+		"body": [
+			"## Version $1",
+			"",
+			"* $2"
+		],
+		"description": "New Version"
+	},
 
-    "license": {
-    "prefix": "lic",
-    "body": [
-      "# License",
-      "",
-      "[MIT](LICENSE.md) &copy; Alessandro Fragnani"
-    ],
-    "description": "license"
-    },
-    
-    "donation": {
-    "prefix": "don",
-    "body": [
-      "",
-      "---",
-      "",
-      "[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) if you enjoy using this extension :-)"
-    ],
-    "description": "donation"
-    }
+	"Changelog Fix": {
+		"prefix": "clfix",
+		"body": [
+			"**Fix:** ${1:description} (issue [#${2:number}](${3:hyperlink}))"
+		],
+		"description": "Changelog Fix"
+	},
+
+	"Changelog New Setting": {
+		"prefix": "clnewsett",
+		"body": [
+			"**New Setting:** ${1:description}"
+		],
+		"description": "Changelog New Setting"
+	},
+
+	"Changelog New Command": {
+		"prefix": "clnewcomm",
+		"body": [
+			"**New Command:** ${1:description}"
+		],
+		"description": "Changelog New Command"
+	},
+
+	"license": {
+		"prefix": "lic",
+		"body": [
+			"# License",
+			"",
+			"[MIT](LICENSE.md) &copy; Alessandro Fragnani"
+		],
+		"description": "license"
+	},
+
+	"donation": {
+		"prefix": "don",
+		"body": [
+			"",
+			"---",
+			"",
+			"[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) if you enjoy using this extension :-)"
+		],
+		"description": "donation"
+	}
 }

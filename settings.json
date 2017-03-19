@@ -1,20 +1,31 @@
 // Place your settings in this file to overwrite the default settings
 {
-		// Controls the font size.
+    "workbench.editor.showTabs": false,
+    "workbench.activityBar.visible": true,
+    "workbench.iconTheme": null,
+
+    "window.title": "${rootPath}${separator}${appName}",
+    "window.menuBarVisibility": "toggle",
+
+    "editor.trimAutoWhitespace": true,        
+    "editor.lineNumbers": "on",
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "off",
 	"editor.fontFamily": "Source Code Pro",
-	"editor.fontSize": 14,
-	"editor.wrappingColumn": 100,
-	
-	"files.encoding": "windows1252",
-	
-	"files.exclude": {
-		"**/.git": true,
-		"**/.DS_Store": true,
-		// pascal
+
+    "files.associations": {
+        "*.dproj": "xml",
+        ".james": "json"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        // pascal
 		"**/*.ico": true,
 		"**/*.{res,RES}": true,
 		"**/*.rc": true,
-		"**/*.bak?": true,
 		"**/*.dcu": true,
 		"**/*.rsb": true,
 		"**/*.dfm": {"when": "$(basename).pas"},
@@ -24,49 +35,45 @@
 		"**/*.~pas": {"when": "$(basename).pas"},
 		"**/*.exe": {"when": "$(basename).dpr"},
 		"**/*.used": {"when": "$(basename).dpr"},
-		// Delphi XE
-		"__history/**": true,
-		"**/*.local": true,
-		
-		// finalbuilder
-		"**/*.fbl7": true,
-		"**/*.fbpInf": true
+		"**/__history/**": true,
+		"**/__recovery/**": true,
+		"**/Win32/**": true,
+		"**/*.local": true
+    },
 
-	},
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
 
-	"search.excludeFolders": [
-		".git",
-		"node_modules",
-		"bower_components",
-		"__history"
-	],
-    
-    "codegnuglobal.encoding": "ISO-8859-1",
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn"
+    },
 
-	
-	"projectManager.sortList": "Name",
-    "projectManager.codePath": "C:\\Program Files\\Microsoft VS Code\\Bin\\Code.cmd",
     "projectManager.openInNewWindow": false,
-    	
-	"tagged.tagString": "# #day/#month/#year - #enteredText",
-	
-	"bookmarks.saveBookmarksBetweenSessions": true,
-    "bookmarks.navigateThroughAllFiles": true,
-    "bookmarks.useStickyBookmarks": true,
-	
-    "numberedBookmarks.saveBookmarksBetweenSessions": true,
-    
-    "gitProjectManager.baseProjectsFolders": [
-        "C:\\Users\\Alessandro\\Documents\\GitHub-Testing"
+    "projectManager.cacheProjectsBetweenSessions": true,
+    "projectManager.sortList": "Name",
+    "projectManager.vscode.baseFolders": [
+       "c:\\users\\alefr\\Downloads" 
+    ],
+    "projectManager.git.baseFolders": [
+       "c:\\users\\alefr\\documents\\GitHub" 
+    ],
+    "projectManager.git.ignoredFolders": [
+        "node_modules",
+        "out",
+        "typings",
+        "test",
+        "_testing",
+        "_forks"
     ],
     
-    //"pascal.format.indent": 3,
-    "pascal.formatter.engine": "jcf",
-    "pascal.formatter.enginePath": "C:\\Delphi\\JediCodeFormat\\bin\\jcf.exe",
-    "pascal.formatter.engineParameters": "C:\\Delphi\\JediCodeFormat\\bin\\JCFSettings.cfg"
-    // "pascal.formatter.engine": "ptop",
-    // "pascal.formatter.enginePath": "C:\\FPC\\2.6.4\\bin\\i386-win32\\ptop.exe",
-    // "pascal.formatter.engineParameters": ""
-    //"pascal.formatter.engineParameters": "C:\\FPC\\2.6.4\\bin\\i386-win32\\ptop.cfg"
-    
+    "numberedBookmarks.useStickyBookmarks": true,
+    "numberedBookmarks.saveBookmarksBetweenSessions": true,
+
+    "bookmarks.useStickyBookmarks": true,
+    "bookmarks.navigateThroughAllFiles": true,
+    "bookmarks.saveBookmarksBetweenSessions": true,
+
+    "pascal.formatter.engine": "ptop",
+    "pascal.formatter.enginePath": "C:\\lazarus\\fpc\\3.0.0\\bin\\i386-win32ptop.exe",
+
+    "jenkins.polling": 2
 }
