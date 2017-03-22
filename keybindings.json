@@ -18,5 +18,19 @@
     {
         "key": "ctrl+shift+alt+p",
         "command": "projectManager.listProjectsNewWindow"
+    },
+    {
+        "key": "ctrl+f12",
+        "command": "fileextswitch",
+        "args": {
+            "extensions": [
+                ".dpr",
+                ".dproj",
+                ".pas",
+                ".dfm"
+            ],
+            "useOtherColumn": true
+        },
+        "when": "editorTextFocus"
     }
 ]

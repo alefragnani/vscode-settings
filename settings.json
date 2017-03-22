@@ -11,10 +11,12 @@
     "editor.lineNumbers": "on",
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "off",
-	"editor.fontFamily": "Source Code Pro",
+	"editor.fontFamily": "Hack",
+    "editor.fontSize": 12,
 
     "files.associations": {
         "*.dproj": "xml",
+        "*.groupproj": "xml",
         ".james": "json"
     },
     "files.exclude": {
@@ -41,6 +43,8 @@
 		"**/*.local": true
     },
 
+    "terminal.integrated.fontSize": 12,
+
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
 
     "[markdown]": {
@@ -51,10 +55,10 @@
     "projectManager.cacheProjectsBetweenSessions": true,
     "projectManager.sortList": "Name",
     "projectManager.vscode.baseFolders": [
-       "c:\\users\\alefr\\Downloads" 
+        "C:\\Users\\alefr\\Documents\\GitHub"
     ],
     "projectManager.git.baseFolders": [
-       "c:\\users\\alefr\\documents\\GitHub" 
+       "c:\\users\\alefr\\documents\\github" 
     ],
     "projectManager.git.ignoredFolders": [
         "node_modules",
@@ -63,6 +67,9 @@
         "test",
         "_testing",
         "_forks"
+    ],
+    "projectManager.svn.baseFolders": [
+       "c:\\users\\alefr\\documents\\svn"
     ],
     
     "numberedBookmarks.useStickyBookmarks": true,
