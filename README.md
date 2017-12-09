@@ -32,9 +32,18 @@ Mostly to use the same shortcut for every code editor
 
 ### MacOS
 
+#### Stable
 ```
-cd ˜/Documents/GitHub/vscode-settings/
-ln -h settings.json /Users/alefragnani/Library/Application\ Support/Code/User/settings.json
-ln -h keybindings.json /Users/alefragnani/Library/Application\ Support/Code/User/keybindings.json
-ln -s ˜/Documents/GitHub/vscode-settings/snippets /Users/alefragnani/Library/Application\ Support/Code/User/snippets
+cd ~/Documents/GitHub/vscode-settings/
+ln -h settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -h keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/Documents/GitHub/vscode-settings/snippets ~/Library/Application\ Support/Code/User/snippets
+```
+
+#### Insiders
+```
+cd ~/Documents/GitHub/vscode-settings/
+ln -h settings.json ~/Library/Application\ Support/Code\ -\ Insiders/User/settings.json
+ln -h keybindings.json ~/Library/Application\ Support/Code\ -\ Insiders/User/keybindings.json
+ln -s ~/Documents/GitHub/vscode-settings/snippets ~/Library/Application\ Support/Code\ -\ Insiders/User/snippets
 ```
