@@ -52,14 +52,13 @@
         "editor.wordWrap": "wordWrapColumn"
     },
 
-    "projectManager.openInNewWindow": false,
     "projectManager.cacheProjectsBetweenSessions": true,
     "projectManager.sortList": "Name",
     "projectManager.vscode.baseFolders": [
-        "C:\\Users\\alefr\\Documents\\GitHub"
+        "$home\\Documents\\GitHub"
     ],
     "projectManager.git.baseFolders": [
-       "c:\\users\\alefr\\documents\\github" 
+       "$home\\Documents\\GitHub"
     ],
     "projectManager.git.ignoredFolders": [
         "node_modules",
@@ -70,15 +69,12 @@
         "_forks"
     ],
     "projectManager.svn.baseFolders": [
-       "c:\\users\\alefr\\documents\\svn"
+       "$home\\documents\\svn"
     ],
     
-    "numberedBookmarks.useStickyBookmarks": true,
-    "numberedBookmarks.saveBookmarksBetweenSessions": true,
+    "numberedBookmarks.navigateThroughAllFiles": "false",
 
-    "bookmarks.useStickyBookmarks": true,
     "bookmarks.navigateThroughAllFiles": true,
-    "bookmarks.saveBookmarksBetweenSessions": true,
 
     "pascal.formatter.engine": "ptop",
     "pascal.formatter.enginePath": "C:\\lazarus\\fpc\\3.0.0\\bin\\i386-win32ptop.exe",
