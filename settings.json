@@ -11,8 +11,9 @@
     "editor.lineNumbers": "on",
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "off",
-	"editor.fontFamily": "Hack",
+	// "editor.fontFamily": "Hack",
     "editor.fontSize": 12,
+    "editor.minimap.enabled": false,
 
     "files.associations": {
         "*.dproj": "xml",
