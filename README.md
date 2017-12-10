@@ -30,6 +30,24 @@ Mostly to use the same shortcut for every code editor
 
 ## Syncing (using Symlink)
 
+### Windows
+
+#### Stable
+```
+cd %HOMEPATH%/Documents/GitHub/vscode-settings/
+mklink /H %HOMEPATH%\AppData\Roaming\Code\User\settings.json settings.json
+mklink /H %HOMEPATH%\AppData\Roaming\Code\User\keybindings.json keybindings.json
+mklink /J %HOMEPATH%\AppData\Roaming\Code\User\snippets snippets
+```
+
+#### Insiders
+```
+cd %HOMEPATH%/Documents/GitHub/vscode-settings/
+mklink /H "%HOMEPATH%\AppData\Roaming\Code - Insiders\User\settings.json" settings.json
+mklink /H "%HOMEPATH%\AppData\Roaming\Code - Insiders\User\keybindings.json" keybindings.json
+mklink /J "%HOMEPATH%\AppData\Roaming\Code - Insiders\User\snippets" snippets
+```
+
 ### MacOS
 
 #### Stable
