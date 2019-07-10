@@ -30,6 +30,8 @@ Mostly to use the same shortcut for every code editor
 
 ## Syncing (using Symlink)
 
+The **symlinks** must be _hard links_, otherwise VS Code will display errors about _to many link loop_ or something like that.
+
 ### Windows
 
 #### Stable
