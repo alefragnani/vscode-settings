@@ -3,12 +3,22 @@
     {
         "key": "ctrl+c",
         "command": "copy-word.copy",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && isWindows"
     },
     {
         "key": "ctrl+x",
         "command": "copy-word.cut",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+c",
+        "command": "copy-word.copy",
+        "when": "editorTextFocus && isMac"
+    },
+    {
+        "key": "cmd+x",
+        "command": "copy-word.cut",
+        "when": "editorTextFocus && isMac"
     },
     {
         "key": "shift+alt+y",
@@ -17,7 +27,13 @@
     },
     {
         "key": "ctrl+shift+alt+p",
-        "command": "projectManager.listProjectsNewWindow"
+        "command": "projectManager.listProjectsNewWindow",
+        "when": "isWindows"
+    },
+    {
+        "key": "cmd+shift+alt+p",
+        "command": "projectManager.listProjectsNewWindow",
+        "when": "isMac"
     },
     {
         "key": "ctrl+f12",
@@ -32,5 +48,27 @@
             "useOtherColumn": true
         },
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+z",
+        "command": "workbench.view.extension.bookmarks"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "workbench.action.switchWindow"
+    },{
+        "key": "ctrl+h",
+        "command": "workbench.action.tasks.runTask",
+        "args": "echo"
     }
 ]
