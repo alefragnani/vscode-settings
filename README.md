@@ -81,18 +81,30 @@ $ code --list-extensions
 ```
 code --install-extension alefragnani.Bookmarks
 code --install-extension alefragnani.copy-word
-code --install-extension alefragnani.delphi-keybindings
 code --install-extension alefragnani.delphi-pack
-code --install-extension alefragnani.delphi-themes
-code --install-extension alefragnani.numbered-bookmarks
-code --install-extension alefragnani.pascal
-code --install-extension alefragnani.pascal-formatter
+# code --install-extension alefragnani.delphi-keybindings
+# code --install-extension alefragnani.delphi-themes
+# code --install-extension alefragnani.numbered-bookmarks
+# code --install-extension alefragnani.pascal
+# code --install-extension alefragnani.pascal-formatter
 code --install-extension alefragnani.project-manager
 code --install-extension alefragnani.read-only-indicator
 code --install-extension alefragnani.tagged-comment
 code --install-extension eamodio.gitlens
 code --install-extension eamodio.find-related
 code --install-extension eamodio.tsl-problem-matcher
+code --install-extension miguelsolorio.min-theme
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode.csharp
 code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension wmaurer.vscode-jumpy
+```
+
+### Disabling
+
+```
+code --disable-extension alefragnani.delphi-keybindings
+code --disable-extension ms-azuretools.vscode-docker
+code --disable-extension ms-vsliveshare.vsliveshare
 ```
