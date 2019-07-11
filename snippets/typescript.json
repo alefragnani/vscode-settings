@@ -19,7 +19,7 @@
         "prefix": "ifund",
         "body": [
             "if (typeof $1 === \"undefined\") {",
-            "		return;",
+            "\t\treturn;",
             "}"
         ]
     },
@@ -28,7 +28,7 @@
         "prefix": "regComm",
         "body": [
             "vscode.commands.registerCommand(\"${1:commandName}\", () => {",
-            "	$2",
+            "\t$2",
             "});"
         ]
     },
@@ -69,5 +69,16 @@
 			"}"			
 		],
 		"description": "Suround with Try Catch"
+	},
+
+	"Copyright MIT Header": {
+		"prefix": "crMIT",
+		"body": [
+            "/*---------------------------------------------------------------------------------------------",
+            "*  Copyright (c) Alessandro Fragnani. All rights reserved.",
+			"*  Licensed under the MIT License. See License.md in the project root for license information.",
+			"*--------------------------------------------------------------------------------------------*/"			
+		],
+		"description": "Copyright MIT Header"
 	}
 }

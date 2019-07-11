@@ -50,6 +50,8 @@
 	"license": {
 		"prefix": "lic",
 		"body": [
+			"---",
+			"",
 			"# License",
 			"",
 			"[MIT](LICENSE.md) &copy; Alessandro Fragnani"
@@ -57,14 +59,124 @@
 		"description": "license"
 	},
 
-	"donation": {
-		"prefix": "don",
+	"Donation VS Code": {
+		"prefix": "donationVSCode",
 		"body": [
 			"",
 			"---",
 			"",
-			"[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) if you enjoy using this extension :-)"
+			"[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) a :coffee: and you will help me to keep working on this extension :wink:",
+			"",
+			"[![Paypal Donations](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) um :coffee: e você vai me ajudar a continuar trabalhando nesta extensão :wink:"
 		],
-		"description": "donation"
-	}
+		"description": "donation VS Code"
+	},
+
+	"Donation Atom": {
+		"prefix": "donationAtom",
+		"body": [
+			"",
+			"---",
+			"",
+			"[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=atom%20plugins&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) a :coffee: and you will help me to keep working on this package :wink:",
+			"",
+			"[![Paypal Donations](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=atom%20plugins&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) um :coffee: e você vai me ajudar a continuar trabalhando neste pacote :wink:"
+		],
+		"description": "Donation Atom"
+	},
+
+	"Donation Delphi": {
+		"prefix": "donationDelphi",
+		"body": [
+			"",
+			"---",
+			"",
+			"[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=delphi&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) a :coffee: and you will help me to keep working on this component :wink:",
+			"",
+			"[![Paypal Donations](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=delphi&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) uma :coffee: e você vai me ajudar a continuar trabalhando neste componente :wink:"
+		],
+		"description": "Donation Delphi"
+	},
+
+	"Donation Table VS Code": {
+		"prefix": "donationTableVSCode",
+		"body": [
+			"",
+			"<table align=\"center\" width=\"60%\" border=\"0\">",
+			"  <tr>",
+			"    <td>",
+			"      <a title=\"Paypal\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\"/></a>",
+			"    </td>",
+			"    <td>",
+			"      <a title=\"Paypal\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif\"/></a>",
+			"    </td>",
+			"    <td>",
+			"      <a title=\"Patreon\" href=\"https://www.patreon.com/alefragnani\"><img src=\"https://raw.githubusercontent.com/alefragnani/oss-resources/master/images/button-become-a-patron-rounded-small.png\"/></a>",
+			"    </td>",
+			"  </tr>",
+			"</table>",
+			""
+		],
+		"description": "Donation Table VS Code"
+	},
+
+
+	"Donation Table Atom": {
+		"prefix": "donationTableAtom",
+		"body": [
+			"",
+			"<table align=\"center\" width=\"60%\" border=\"0\">",
+			"  <tr>",
+			"    <td>",
+			"      <a title=\"Paypal\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=atom%20plugins&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\"/></a>",
+			"    </td>",
+			"    <td>",
+			"      <a title=\"Paypal\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=atom%20plugins&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif\"/></a>",
+			"    </td>",
+			"    <td>",
+			"      <a title=\"Patreon\" href=\"https://www.patreon.com/alefragnani\"><img src=\"https://raw.githubusercontent.com/alefragnani/oss-resources/master/images/button-become-a-patron-rounded-small.png\"/></a>",
+			"    </td>",
+			"  </tr>",
+			"</table>",
+			""
+		],
+		"description": "Donation Table Atom"
+	},
+
+	"Donation Table Delphi": {
+		"prefix": "donationTableDelphi",
+		"body": [
+			"",
+			"<table align=\"center\" width=\"60%\" border=\"0\">",
+			"  <tr>",
+			"    <td>",
+			"      <a title=\"Paypal\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=delphi&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\"/></a>",
+			"    </td>",
+			"    <td>",
+			"      <a title=\"Paypal\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=delphi&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif\"/></a>",
+			"    </td>",
+			"    <td>",
+			"      <a title=\"Patreon\" href=\"https://www.patreon.com/alefragnani\"><img src=\"https://raw.githubusercontent.com/alefragnani/oss-resources/master/images/button-become-a-patron-rounded-small.png\"/></a>",
+			"    </td>",
+			"  </tr>",
+			"</table>",
+			""
+		],
+		"description": "Donation Table Delphi"
+	},
+
+
+
+	"Support OSS": {
+		"prefix": "supportOSS",
+		"body": [
+			"## Support",
+			"",
+			"While **${1:Project Name}** is free and open source, if you find it useful, please consider supporting it.",
+			"",
+			"I've been working on this on my spare time, and although I enjoy developing it, I would like to be able to give more attention to its growth."
+		],
+		"description": "Support OSS"
+	},
+	
 }
