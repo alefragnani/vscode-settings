@@ -1,85 +1,52 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.editor.showTabs": false,
     "workbench.activityBar.visible": true,
-    "workbench.iconTheme": null,
-    // "editor.tokenColorCustomizations": {
-    //     // "numbers": "#FF0000"
-    //     "textMateRules": [
-    //         {
-    //             "scope": "constant.numeric.float.pascal",
-    //             "settings": {
-    //                 "foreground": "#00ff00"
-    //             }
-    //         },
-    //         {
-    //             "scope": "constant.numeric.hex.java",
-    //             "settings": {
-    //                 "foreground": "#FF0000"
-    //             }
-    //         },
-    //         {
-    //             "scope": "constant.numeric.hex.pascal",
-    //             "settings": {
-    //                 "foreground": "#FF0000"
-    //             }
-    //         },
-    //         {
-    //             "scope": "constant.numeric.pascal",
-    //             "settings": {
-    //                 "foreground": "#0000ff"
-    //             }
-    //         },
-    //         {
-    //             "scope": "constant.numeric.decimal.java",
-    //             "settings": {
-    //                 "foreground": "#0000ff"
-    //             }
-    //         },
-    //         {
-    //             "scope": "string.pascal",
-    //             "settings": {
-    //                 "foreground": "#00ff00"
-    //             }
-    //         },
-    //         {
-    //             "scope": "string.other.pascal",
-    //             "settings": {
-    //                 "foreground": "#ff0000"
-    //             }
-    //         }
-    //     ]
-    // },
-    // "workbench.colorCustomizations": {
-    //     "titleBar.activeBackground": #FFFF00
-    //     "input.foreground": "#0000ff",
-    //     "button.foreground": "#ff0000",
-    //     "input.placeholderForeground": "#00ff00"
-    //     "statusBar.background": "#666666",
-    //     "panel.background": "#555555",
-    //     "sideBar.background": "#444444",
-    //     "editor.background": "#ff0000"
-    //     "button.background": "#FF0000",
-    //     "gitDecoration.untrackedResourceForeground": "#ff0000",
-    //     "activityBarBadge.background": "#ff0000"
-    // },
+    "workbench.colorCustomizations": {
+        // "editor.lineHighlightBackground": "$editor.background"
+        "bookmarks.lineBackground": "#0077ff2a",
+        // "numberedBookmarks.overviewRuler": "#00ff00",
+        // "numberedBookmarks.lineBorder": "#ffffaa",
+        "numberedBookmarks.lineBackground": "#b4ffaa3b",
+        // "bookmarks.gutterIconBackground": "#00FFFF",
+        // "editor.lineHighlightBorder": "#ff0000",
+        // "gitlens.trailingLineBackgroundColor": "#ff0000"
+        //     "titleBar.activeBackground": #FFFF00
+        //     "input.foreground": "#0000ff",
+        //     "button.foreground": "#ff0000",
+        //     "input.placeholderForeground": "#00ff00"
+        //     "statusBar.background": "#666666",
+        //     "panel.background": "#555555",
+        //     "sideBar.background": "#444444",
+        //     "editor.background": "#ff0000"
+        //     "button.background": "#FF0000",
+        //     "gitDecoration.untrackedResourceForeground": "#ff0000",
+        //     "activityBarBadge.background": "#ff0000"
+    },
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "workbench.editor.showTabs": false,
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.list.automaticKeyboardNavigation": false,
+    "workbench.sideBar.location": "left",
     "window.title": "${rootPath}${separator}${appName}",
-    "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
-    "editor.trimAutoWhitespace": true,
-    "editor.lineNumbers": "on",
-    "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.minimap.enabled": false,
-    "editor.wordWrap": "off",
-    "editor.wordWrapColumn": 120,
+    "window.zoomLevel": 0,
+    // "remote.extensionKind": {
+    //     "alefragnani.project-manager": [
+    //         "workspace"
+    //     ],
+    //     // "vsls-contrib.codetour": [
+    //     //     "workspace"
+    //     // ]
+    // },
     "files.associations": {
+        ".james": "json",
         "*.dproj": "xml",
         "*.groupproj": "xml",
-        ".james": "json",
-        "*.psc": "pascal"
+        "*.dof": "ini",
+        "*.cfg": "ini",
+        "*.psc": "pascal",
+        "*.inc": "pascal",
     },
     "files.exclude": {
         // VCS
@@ -88,17 +55,22 @@
         "**/.hg": true,
         // MacOS
         "**/.DS_Store": true,
+        "**/*._*": true,
         // Node.js / TypeScript
         // "**/node_modules/**": true,
         // "**/out/**": true,
         // my vscode/atom extensions
         "**/issues/**": true,
         // pascal
+        "**/*.map": true,
+        "**/*.tds": true,
+        "**/*.tmp": true,
         "**/*.ico": true,
         "**/*.{res,RES}": true,
         "**/*.rc": true,
+        "**/*.bak?": true,
         "**/*.dcu": true,
-        "package-lock.json": true,
+        "**/*.bpl": true,
         "**/*.rsb": true,
         "**/*.dfm": {
             "when": "$(basename).pas"
@@ -130,6 +102,12 @@
         "**/*.identcache": {
             "when": "$(basename).dpr"
         },
+        "**/*.dcr": {
+            "when": "$(basename).pas"
+        },
+        "**/*.dof": {
+            "when": "$(basename).dpk"
+        },
         "**/__history/**": true,
         "**/__recovery/**": true,
         "**/Win32/**": true,
@@ -153,21 +131,50 @@
             "when": "$(basename).fbp8"
         }
     },
-    // "terminal.integrated.fontSize": 22,
-    "terminal.integrated.rendererType": "dom",
-    "diffEditor.renderSideBySide": true,
-    "breadcrumbs.enabled": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "files.hotExit": "onExitAndWindowClose",
+    "explorer.enableDragAndDrop": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 120,
+    "[pascal]": {
+        "files.encoding": "windows1252"
+    },
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn"
     },
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "breadcrumbs.enabled": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
     "projectManager.cacheProjectsBetweenSessions": true,
+    "projectManager.openInCurrenWindowIfEmpty": "never",
     "projectManager.sortList": "Recent",
-    "projectManager.groupList": true,
+    "projectManager.checkInvalidPathsBeforeListing": true,
     "projectManager.git.baseFolders": [
         "$home/Documents/GitHub",
-        "/Volumes/MacMiniES/alefragnani/Sources/GitHub",
+        "/Volumes/MacMiniES/alefragnani/sources/GitHub",
     ],
+    // "projectManager.hg.baseFolders": [
+    //     "$home/Documents/GitHub",
+    //     "/Volumes/MacMiniES/alefragnani/sources/GitHub",
+    // ],
+    // "projectManager.vscode.baseFolders": [
+    //     "$home/Documents/GitHub",
+    //     "/Volumes/MacMiniES/alefragnani/sources/GitHub",
+    // ],
+    // "projectManager.any.baseFolders": [
+    //     "$home/Documents/GitHub",
+    // ],
     "projectManager.git.ignoredFolders": [
         "node_modules",
         "out",
@@ -176,18 +183,17 @@
         "test",
         "_testing"
     ],
-    // "pascal.formatter.engine": "embarcadero",
-    // "pascal.formatter.enginePath": "C:\\Program Files (x86)\\Embarcadero\\Studio\\20.0\\bin\\formatter.exe",
-    // "pascal.formatter.engineParameters": "C:\\Users\\alefr\\AppData\\Roaming\\Embarcadero\\BDS\\20.0\\xx.config",
-    // "pascal.formatter.engine": "jcf",
-    // "pascal.formatter.enginePath": "C:\\GNU\\jcf_243_exe\\jcf.exe",
-    // "pascal.formatter.engineParameters": "C:\\GNU\\jcf_243_exe\\JCFSettings.cfg",
+    "projectManager.tags": [
+        "work",
+        "home",
+        "tmp",
+        "another"
+    ],
     "pascal.formatter.engine": "ptop",
     "pascal.formatter.enginePath": "C:\\GNU\\jcf_243_exe\\jcf.exe",
     "pascal.formatter.engineParameters": "C:\\GNU\\jcf_243_exe\\JCFSettings.cfg",
-    "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
     "gitlens.advanced.messages": {
+        "suppressSupportGitLensNotification": true,
         "suppressResultsExplorerNotice": true,
         "suppressShowKeyBindingsNotice": true
     },
@@ -222,12 +228,12 @@
     "gitlens.blame.heatmap.enabled": false,
     "gitlens.blame.highlight.enabled": false,
     "gitlens.hovers.enabled": false,
-    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.advanced.telemetry.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
     "gitlens.views.search.enabled": false,
+    "gitlens.views.fileHistory.enabled": false,
     "gitlens.mode.statusBar.enabled": false,
-    "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.views.compare.enabled": false,    
+    "findrelated.openSideBySide": true,
     "findrelated.applyRulesets": [
         "aspnet",
         "aspnet-mvc",
@@ -235,46 +241,34 @@
         "c/c++",
         "csharp",
         "minified",
-        "Delphi"
+        "delphi"
     ],
-    "findrelated.rulesets": [
+    "bookmarks.navigateThroughAllFiles": true,
+    "bookmarks.sideBar.expanded": true,
+    "bookmarks.label.suggestion": "useWhenSelected",
+    "bookmarks.multicursor.toggleMode": "allLinesAtOnce",
+    "numberedBookmarks.gutterIconFillColor": "#00ffff",
+    "numberedBookmarks.gutterIconNumberColor": "#ff0000",
+    "numberedBookmarks.navigateThroughAllFiles": "allowDuplicates",
+    // "go.gopath": "/Volumes/MacMiniES/alefragnani/go",
+    "go.toolsGopath": "/Volumes/MacMiniES/alefragnani/go",
+    "eslint.lintTask.enable": true,
+    "codetour.showMarkers": true,
+    "dimmer.context": 3,
+    "holiday.gearIconStyle": "santa hat",
+    "liveshare.featureSet": "insiders",
+    "settings.cycle": [
         {
-            "name": "Delphi",
-            "rules": [
+            "id": "Testing", // must be unique
+            "overrideWorkspaceSettings": false,
+            "values": [
                 {
-                    "pattern": "(.*)\\.(?:dfm)$",
-                    "locators": [
-                        "$1.pas"
-                    ]
+                    "workbench.colorTheme": "Min Dark"
                 },
                 {
-                    "pattern": "(.*)\\.pas$",
-                    "locators": [
-                        "{$1.dfm}"
-                    ]
-                },
-                {
-                    "pattern": "(.*)\\.(?:dproj|cfg|dof|identcache|stat)$",
-                    "locators": [
-                        "$1.dpr"
-                    ]
-                },
-                {
-                    "pattern": "(.*)\\.dpr$",
-                    "locators": [
-                        "{$1.dproj,$1.cfg,$1.dof,$1.stat}"
-                    ]
+                    "workbench.colorTheme": "Min Light"
                 }
             ]
         }
-    ],
-    "findrelated.openSideBySide": true,
-    "bookmarks.navigateThroughAllFiles": true,
-    "bookmarks.backgroundLineColor": "rgba(21, 126, 251, 0.1)",
-    "numberedBookmarks.navigateThroughAllFiles": "false",
-    "numberedBookmarks.gutterIconFillColor": "",
-    "numberedBookmarks.gutterIconNumberColor": "",
-    "numberedBookmarks.backgroundLineColor": "green",
-    "liveshare.featureSet": "insiders",
-    "workbench.colorTheme": "Min Dark"
+    ]
 }
