@@ -1,0 +1,166 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"React Function Component": {
+		"scope": "javascript,typescript",
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react';",
+            "",
+			"const ${1:Name} = () => {",
+			"",
+			"  return (",
+			"    ${2:<div></div>}",
+			"  );",
+			"}",
+			"",
+			"export default ${1:Name};"
+		],
+		"description": "React - Function Component"
+	},
+	"Styled Component": {
+		"scope": "javascript,typescript",
+		"prefix": "styc",
+		"body": [
+			"import styled from 'styled-components';",
+			"",
+			"const ${1:ComponentName} = styled.${2:Styled}`",
+			"  $0",
+			"`;"
+		],
+		"description": "Styled Component"
+	},
+	"Router - Import": {
+		"scope": "javascript,typescript",
+		"prefix": "rrdi",
+		"body": [
+			"import { BrowserRouter, Switch, Route, Link } from \"react-router-dom\";",
+		],
+		"description": "Router"
+	},
+	"Router - Router": {
+		"scope": "javascript,typescript",
+		"prefix": "rrdr",
+		"body": [
+			"<BrowserRouter >",
+			"  <Switch>",
+			"    <Route path=\"/${1:alternative_route\">",
+			"      <Alternative_Component/>",
+			"    </Route>$0",
+			"    <Route path=\"\/\" exact>",
+			"      <App />",
+			"    </Route>",
+			"    <Route component={() => (<div>Erro 404</div>)}/>",
+			"  </Switch>",
+			"</BrowserRouter>"
+		],
+		"description": "Router"
+	},
+	"Dispatch": {
+		"prefix": "dsp",
+		"scope": "typescript,typescriptreact",
+		"body": [
+			"dispatch({",
+			"  type: DispatchTypes.${1:setDocumentData},",
+			"  payload: {",
+			"    $2: $3,",
+			"  },",
+			"});"
+		],
+		"description": "Dispatch"
+	},
+	"Prop-Types - Import": {
+		"scope": "javascript,typescript",
+		"prefix": "pti",
+		"body": [
+			"import PropTypes from \"prop-types\";",
+		],
+		"description": "Prop-Types - Import"
+	},
+	"Prop-Types - Declare": {
+		"scope": "javascript,typescript",
+		"prefix": "ptd",
+		"body": [
+			"${1:component}.propTypes = {",
+			"  ${2:prop}: PropTypes.${3|array,bool,func,number,object,string,symboltwo,three|}",
+			"};"
+		],
+		"description": "Prop-Types - Import"
+	},
+	"Prop-Types - Default": {
+		"scope": "javascript,typescript",
+		"prefix": "ptdd",
+		"body": [
+			"${1:component}.defaultProps = {",
+			"  ${2:prop}: ${3|array,bool,func,number,object,string,symboltwo,three|}",
+			"};"
+		],
+		"description": "Prop-Types - Import"
+	},
+	"Prop-Types - Default Definition": {
+		"scope": "javascript,typescript",
+		"prefix": "ptdfd",
+		"body": [
+			"${1:prop}: ${2|'',0,true,false,() => {}|}",
+		],
+		"description": "Prop-Types - Default Definition"
+	},
+	"Prop-Types - Definition Not Required": {
+		"scope": "javascript,typescript",
+		"prefix": "ptdf",
+		"body": [
+			"${1:prop}: PropTypes.${3|array,bool,func,number,object,string,symboltwo,three|}",
+		],
+		"description": "Prop-Types - Definition Not Required"
+	},
+	"Prop-Types - Definition Required": {
+		"scope": "javascript,typescript",
+		"prefix": "ptdfr",
+		"body": [
+			"${1:prop}: PropTypes.${3|array,bool,func,number,object,string,symboltwo,three|}.isRequired",
+		],
+		"description": "Prop-Types - Definition Required"
+	},
+	"React useState": {
+		"scope": "javascript,typescript",
+		"prefix": "ust",
+		"body": 
+			"const [$1, set${1/(.*)/${1:/capitalize}/}] = React.useState(${2:defaultValue});"
+		,
+		"description": "React useState"
+	},	
+	"useEffect": {
+		"scope": "javascript,typescript",
+		"prefix": "usf",
+		"body": [
+			"useEffect(() => {",
+			"  $0",
+			"}${1:, []});",
+		],
+		"description": "useEffect"
+	},
+	"customHooks": {
+		"scope": "javascript,typescript",
+		"prefix": "ch",
+		"body": [
+			"function use${1:HookName}() {",
+			"  $0",
+			"}",
+		],
+		"description": "customHooks"
+	},
+}
