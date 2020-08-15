@@ -70,9 +70,9 @@
 		],
 		"description": "Suround with Try Catch"
 	},
-
+    
 	"Copyright MIT Header": {
-		"prefix": "crMIT",
+        "prefix": "crMIT",
 		"body": [
             "/*---------------------------------------------------------------------------------------------",
             "*  Copyright (c) Alessandro Fragnani. All rights reserved.",
@@ -80,5 +80,28 @@
 			"*--------------------------------------------------------------------------------------------*/"			
 		],
 		"description": "Copyright MIT Header"
+	},
+    
+    "Changelog Version": {
+        "prefix": "clv",
+        "body": [
+            "changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: \"${1:number}\", releaseDate: \"${2:date}\" } });"
+        ],
+        "description": "Changelog Version"
+    },
+    
+    "Changelog Item": {
+        "prefix": "cli",
+        "body": [
+            "changeLog.push({",
+            "    kind: ChangeLogKind.${1:kindUpper},",
+            "    detail: {",
+            "        message: \"${2:message}\",",
+            "        id: ${3:id},",
+            "        kind: IssueKind.${4:kindLower}",
+            "    }",
+            "});"
+        ],
+        "description": "Changelog Version"
 	}
 }
