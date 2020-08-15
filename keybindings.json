@@ -8,7 +8,7 @@
     {
         "key": "ctrl+x",
         "command": "copy-word.cut",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && isWindows"
     },
     {
         "key": "cmd+c",
@@ -26,6 +26,11 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "Escape",
+        "command": "extension.jumpy-exit",
+        "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    {
         "key": "ctrl+shift+alt+p",
         "command": "projectManager.listProjectsNewWindow",
         "when": "isWindows"
@@ -34,6 +39,11 @@
         "key": "cmd+shift+alt+p",
         "command": "projectManager.listProjectsNewWindow",
         "when": "isMac"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inProjectManagerList"
     },
     {
         "key": "ctrl+f12",
@@ -60,15 +70,57 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+alt+z",
-        "command": "workbench.view.extension.bookmarks"
+        "key": "cmd+shift+alt+k l",
+        "command": "bookmarks.list",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.view.extension.bookmarks",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+shift+j",
+        "command": "workbench.view.extension.project-manager",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+shift+i",
+        "command": "workbench.view.extension.gitlens",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.view.extension.bookmarks",
+        "when": "isWindows"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.view.extension.project-manager",
+        "when": "isWindows"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.view.extension.gitlens",
+        "when": "isWindows"
     },
     {
         "key": "shift+alt+w",
         "command": "workbench.action.switchWindow"
-    },{
+    },
+    {
         "key": "ctrl+h",
         "command": "workbench.action.tasks.runTask",
         "args": "echo"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "-rerunSearchEditorSearch",
+        "when": "inSearchEditor"
     }
 ]
