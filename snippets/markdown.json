@@ -31,6 +31,14 @@
 		"description": "Changelog Fix"
 	},
 
+	"Changelog Fix - Security Alert PR": {
+		"prefix": "clfixsa",
+		"body": [
+			"- Security Alert: ${1:lib} (dependabot [PR #${2:PR}](https://github.com/alefragnani/vscode-${3:repo}/pull/${2:PR}))"
+		],
+		"description": "Changelog Fix - Security Alert PR"
+	},
+
 	"Changelog New Setting": {
 		"prefix": "clnewsett",
 		"body": [
