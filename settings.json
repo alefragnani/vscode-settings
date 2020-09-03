@@ -25,20 +25,19 @@
     "workbench.colorTheme": "GitHub Dark",
     "workbench.editor.centeredLayoutAutoResize": false,
     "workbench.editor.showTabs": false,
-    "workbench.iconTheme": "vs-minimal",
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.sideBar.location": "left",
     "window.title": "${rootPath}${separator}${appName}",
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    // "remote.extensionKind": {
-    //     "alefragnani.project-manager": [
-    //         "workspace"
-    //     ],
-    //     // "vsls-contrib.codetour": [
-    //     //     "workspace"
-    //     // ]
-    // },
+    "remote.extensionKind": {
+        // "alefragnani.project-manager": [
+        //     "workspace"
+        // ]
+        //     // "vsls-contrib.codetour": [
+        //     //     "workspace"
+        //     // ]
+    },
     "files.associations": {
         ".james": "json",
         "*.dproj": "xml",
@@ -152,7 +151,7 @@
     },
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.rendererType": "experimentalWebgl",
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.renderSideBySide": true,
     "breadcrumbs.enabled": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
@@ -162,8 +161,9 @@
     "projectManager.checkInvalidPathsBeforeListing": true,
     "projectManager.git.baseFolders": [
         "$home/Documents/GitHub",
-        "/Volumes/MacMiniES/alefragnani/sources/GitHub",
+        "/Volumes/MacMiniES/alefragnani/sources/GitHub"
     ],
+    "projectManager.git.maxDepthRecursion": 1,
     // "projectManager.hg.baseFolders": [
     //     "$home/Documents/GitHub",
     //     "/Volumes/MacMiniES/alefragnani/sources/GitHub",
@@ -172,14 +172,17 @@
     //     "$home/Documents/GitHub",
     //     "/Volumes/MacMiniES/alefragnani/sources/GitHub",
     // ],
-    // "projectManager.any.baseFolders": [
-    //     "$home/Documents/GitHub",
-    // ],
+    "projectManager.any.baseFolders": [
+        "/Volumes/MacMiniES/alefragnani/sources/GitHub/_testing"
+    ],
+    "projectManager.any.maxDepthRecursion": 1,
     "projectManager.git.ignoredFolders": [
         "node_modules",
         "out",
         "vso",
         "typings",
+        "atom*",
+        "*delphi*",
         "test",
         "_testing"
     ],
@@ -189,7 +192,7 @@
         "tmp",
         "another"
     ],
-    "pascal.formatter.engine": "ptop",
+    "pascal.formatter.engine": "embarcadero",
     "pascal.formatter.enginePath": "C:\\GNU\\jcf_243_exe\\jcf.exe",
     "pascal.formatter.engineParameters": "C:\\GNU\\jcf_243_exe\\JCFSettings.cfg",
     "gitlens.advanced.messages": {
@@ -270,5 +273,10 @@
                 }
             ]
         }
-    ]
+    ],
+    
+    "zenMode.silentNotifications": false,
+    "workbench.iconTheme": "vs-minimal",
+    "editor.tabSize": 2,
+    "window.newWindowDimensions": "offset"
 }
